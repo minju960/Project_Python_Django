@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #map {
+            width: 600px;
+            height: 600px;
+        }
+
+        #pharmacy_info {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+    </div>
+
+    <div id="pharmacy_info">
+    </div>
+</body>
+</html>
+
+<script>
+    function initMap() {
+        const myLatLng = { lat: {{ lat }}, lng: {{ lng }} };    // 검색한 주소의 위도, 경도
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: myLatLng,
+        });
+        let infowindow = new google.maps.InfoWindow();      // 주변 약국 마커
+        let marker, i;
+        let contentString;
+        let initcolor;
+
+        {% for item in pharmacy_list %}
+            marker = new google.maps.Marker({
+                position: { lat: {{  item.latitude }}, lng: {{ item.longitude }} },
+                map,
+                icon : '/static/icons/icon1.png',
+
+            });
+
+            google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+                    return function() {
+                        contentString = '<div id="content_header">' + '{{ item.name }}' +
+                            '<hr></div>' +
+                            '<div id="content_body">' + '{{ item.address }}'  +
+                            '</div>';
+                        infowindow.setContent(contentString);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+              
+
+        {% endfor %}
+
+
+        // 검색한 주소 마커 표시 & 1000m 내 약국 circle 표시
+        const marker1 = new google.maps.Marker({
+            position: myLatLng,
+            map,
+            title: "current_location",
+        });
+
+        const info = new google.maps.InfoWindow({
+            content: "current_location"
+        });
+        info.open(map, marker1);
+
+        const circle = new google.maps.Circle({
+            strokeColor: "#FF0000",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF0000",
+            fillOpacity: 0.35,
+            map,
+            center: myLatLng,
+            radius:  1000,
+        });
+
+    }
+</script>
+
+<script defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDAQCdTZ49zdFnOVyByYUz_eojJT1YDfEc&callback=initMap">
+</script>

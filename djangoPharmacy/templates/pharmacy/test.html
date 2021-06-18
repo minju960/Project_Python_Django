@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #map {
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAQCdTZ49zdFnOVyByYUz_eojJT1YDfEc&callback=initMap&libraries=&v=weekly"
+    async></script>
+
+
+<script>
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: { lat: 37.56662684266419, lng: 126.97785926728541 },
+        });
+        const geocoder = new google.maps.Geocoder();
+        document.getElementById("submit").addEventListener("click", () => {
+            geocodeAddress(geocoder, map);
+        });
+    }
+</script>
