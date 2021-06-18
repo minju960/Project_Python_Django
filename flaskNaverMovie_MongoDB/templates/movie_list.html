@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, td {
+            text-align: center;
+            border: 1px solid black;
+            /* border-bottom: 1px solid black; */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <tr bgcolor="skyblue" height="50px" style="font-size:20px">
+                <th width="50px">순위</th>
+                <th>포스터</th>
+                <th width="150px">관람등급</th>
+                <th>제목</th>
+                <th width="100px">별점</th>
+                <th width="100px">예매율</th>
+                <th width="100px">장르</th>
+                <th>감독</th>
+            </tr>
+            {% for movie in movie_list %}
+            <tr>
+                <td>{{ movie.seq }}</td>
+                <td><img src="data:image/png;base64, {{ movie.img_b64_decode }}"></td>
+                <td>{{ movie.age }}</td>
+                <td>{{ movie.title }}</td>
+                <td>{{ movie.star_num }}</td>
+                <td>{{ movie.booking_rate }}</td>
+                <td>{{ movie.genre }}</td>
+                <td>{{ movie.director }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+
+</body>
+</html>
