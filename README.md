@@ -1,14 +1,14 @@
 # Project_Python_Django-Flask
 
-## Project
+## Python_Django
 
-:point_right: **문제은행(Itembank)**  
-- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql 8.0, VScode 
-- **프레임** : DATA JPA, thymeleaf   
+:point_right: **반경 내에 있는 약국 찾기**  
+- **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm, MongoDB Atlas(Version 4.4.6
+- **프레임** : Django
 - **내용**
-  - Mysql과 java를 연동하고 데이터를 주고 받으며, 웹페이지를 생성
-  - 문제은행 및 로또 생성기, 섯다 등 다양한 게임을 구현
-  - 시큐리티를 적용하여 사용자 권한에 따른 웹페이지 접근 제한 
-  - index(첫화면페이지)는 반응형웹으로 구현    
+  - MongoDB에 약국 csv 데이터 업로드
+  - MongoDB와 Python 연결하여 원하는 약국 데이터 가져오기
+  - Google Map에 원하는 반경 내에 있는 약국들 표시 (by JavaScript)
+  - 가져온 약국 데이터 테이블 표에 리스트로 표시 (by HTML)
 ![](/djangoPharmacy_capture.png)
 <br>
