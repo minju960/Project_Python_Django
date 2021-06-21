@@ -22,4 +22,5 @@
   - Naver Movie Data Crawling
   - MongoDB에 Crawling한 Data 저장
 ![](/flaskNaverMovie_MongoDB_capture.png)
+![](/NaverMovie_capture.png)
 <br>
