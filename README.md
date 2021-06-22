@@ -23,6 +23,7 @@
 - **내용**
   - Naver Movie Data Crawling
   - MongoDB에 Crawling한 Data 저장
+  - Crawling Data Key : 순위, 포스터 사진, 관람등급, 제목, 별점, 예매율, 장르, 감독
 - **결과물**
   - 네이버 영화 화면
 ![](/NaverMovie_capture.png)
