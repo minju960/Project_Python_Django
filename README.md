@@ -11,7 +11,7 @@
   - Google Map에 원하는 반경 내에 있는 약국들 표시 (by JavaScript)
   - 가져온 약국 데이터 테이블 표에 리스트로 표시 (by HTML)
 - **결과물**
-  - 수성구청을 중심으로 반경 1000m 내에 있는 약국들 표시
+  - 수성구청을 중심으로 반경 1000m 내에 있는 약국들 표시 
 ![](/djangoPharmacy_capture.png)
 <br>
 
