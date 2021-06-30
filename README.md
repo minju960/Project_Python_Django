@@ -2,7 +2,7 @@
 
 ## Python_Django
 
-:point_right: **반경 내에 있는 약국 찾기**  
+:point_right: **특정 위치의 특정 거리 반경 내에 있는 약국 찾기**  
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm, MongoDB Atlas(Version 4.4.6)
 - **프레임** : Django
 - **내용**
