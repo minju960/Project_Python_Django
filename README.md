@@ -30,3 +30,14 @@
   - 크롤링 결과 화면
 ![](/flaskNaverMovie_MongoDB_capture.png)
 <br>
+
+## Python_Django
+
+:point_right: **Django와 MySQL을 연동한 게시판**  
+- **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT, JQUERY, BOOTSTRAP // Pycharm, MySQL
+- **프레임** : Django
+- **내용**
+  - Book 게시판 : 서적 추가, 서적 편집, 서적 리스트, 서평 편집, 서평 리스트
+- **결과물**
+
+<br>
