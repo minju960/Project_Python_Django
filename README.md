@@ -43,12 +43,8 @@
 - **결과물**
   - Book List
 ![](/mybook_capture5.png)
-  - Impression List
+  - Impression List - Paging
 ![](/mybook_capture9.png)
-  - Paging
 ![](/mybook_capture10.png)
   - MySQL(DB) - Book Table
-![](/mybook_mysql1.png)
-  - MySQL(DB) - Impression Table
-![](/mybook_mysql2.png)
 <br>
