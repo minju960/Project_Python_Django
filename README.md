@@ -46,7 +46,7 @@
   - Impression List - Paging
 ![](/mybook_capture9.png)
 ![](/mybook_capture10.png)
-- **결과물**
-  - MySQL(DB) - Book Table
+- **MySQL(DB) - Book & Impression Table**
 ![](/mybook_mysql1.png)
+![](/mybook_mysql2.png)
 <br>
