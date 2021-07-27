@@ -1,14 +1,43 @@
 # Project_Python_Django-Flask
 
-## Project
+## Python_Django
 
-:point_right: **문제은행(Itembank)**  
-- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql 8.0, VScode 
-- **프레임** : DATA JPA, thymeleaf   
+:point_right: **특정 위치의 특정 거리 반경 내에 있는 약국 찾기**  
+- **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm, MongoDB Atlas(Version 4.4.6)
+- **프레임** : Django
 - **내용**
-  - Mysql과 java를 연동하고 데이터를 주고 받으며, 웹페이지를 생성
-  - 문제은행 및 로또 생성기, 섯다 등 다양한 게임을 구현
-  - 시큐리티를 적용하여 사용자 권한에 따른 웹페이지 접근 제한 
-  - index(첫화면페이지)는 반응형웹으로 구현    
+  - MongoDB에 약국 csv 데이터 업로드
+  - MongoDB와 Python 연결하여 원하는 약국 데이터 가져오기
+  - Google Map에 원하는 반경 내에 있는 약국들 표시 (by JavaScript)
+  - 가져온 약국 데이터 테이블 표에 리스트로 표시 (by HTML)
+- **결과물**
+  - 수성구청을 중심으로 반경 1000m 내에 있는 약국들 표시 
 ![](/djangoPharmacy_capture.png)
+<br>
+
+## Python_Flask
+
+:point_right: **Naver Movie Data Crawling**  
+- **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm, MongoDB Atlas(Version 4.4.6)
+- **프레임** : Flask
+- **내용**
+  - Naver Movie Data Crawling
+  - MongoDB에 Crawling한 Data 저장
+  - Crawling Data Key : 순위, 포스터 사진, 관람등급, 제목, 별점, 예매율, 장르, 감독
+- **결과물**
+  - 네이버 영화 화면
+![](/NaverMovie_capture.png)
+  - 크롤링 결과 화면
+![](/flaskNaverMovie_MongoDB_capture.png)
+<br>
+
+## Python_Django
+
+:point_right: **Django와 MySQL을 연동한 게시판**  
+- **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT, JQUERY, BOOTSTRAP // Pycharm, MySQL
+- **프레임** : Django
+- **내용**
+  - Book 게시판 : 서적 추가, 서적 편집, 서적 리스트, 서평 편집, 서평 리스트
+- **결과물**
+
 <br>
