@@ -37,7 +37,13 @@
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT, JQUERY, BOOTSTRAP // Pycharm, MySQL
 - **프레임** : Django
 - **내용**
-  - Book 게시판 : 서적 추가, 서적 편집, 서적 리스트, 서평 편집, 서평 리스트
+  - Python Django와 MySQL을 연동하여 BOOK BLOG 관리
+  - 서적 게시판 기능 : 서적 추가 (이미지 업로드 기능), 서적 편집 및 삭제, 서적 리스트
+  - 서평 게시판 기능 : 서평 추가, 서평 편집 및 삭제, 서평 리스트 (페이징 기능)
 - **결과물**
-
+  - 서적 리스트
+![](/mybook_capture5.png)
+  - 서평 리스트
+![](/mybook_capture9.png)
+![](/mybook_capture10.png)
 <br>
