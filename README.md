@@ -48,5 +48,5 @@
 ![](/mybook_capture10.png)
   - MySQL(DB) Table (Book, Impression)
 ![](/mybook_mysql1.png)
-![](/mybook_mysql1.png)
+![](/mybook_mysql2.png)
 <br>
