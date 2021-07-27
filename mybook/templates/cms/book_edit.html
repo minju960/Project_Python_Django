@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+{% extends "cms/base.html" %}
+{% load bootstrap4 %}
+
+{% block title %} 서적 편집 {% endblock title %}
+{% block today %}{% endblock %}
+{% block content %}
+    <h1 class="mt-4 border-bottom"> 서적 편집 </h1>
+
+    {% if book_id %}
+        <form action="{% url 'cms:book_mod' book_id=book_id %}" method="POST" enctype="multipart/form-data">
+    {% else %}
+        <form action="{% url 'cms:book_add' %}" method="POST" enctype="multipart/form-data">
+    {% endif %}
+        {% csrf_token %}
+
+        {% bootstrap_form form layout='horizontal' %}
+        <div class="form-group row">
+            <div class="offset-md-3 col-md-9">
+                <button type="submit" class="btn btn-primary">저장</button>
+            </div>
+        </div>
+        </form>
+        <a href="{% url 'cms:book_list' %}" class="btn btn-primary">목록</a>
+
+{% endblock content %}
