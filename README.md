@@ -46,7 +46,8 @@
   - Impression List - Paging
 ![](/mybook_capture9.png)
 ![](/mybook_capture10.png)
-- **MySQL(DB) - Book & Impression Table**
+  - MySQL(DB) - Book Table
 ![](/mybook_mysql1.png)
+  - MySQL(DB) - Impression Table
 ![](/mybook_mysql2.png)
 <br>
