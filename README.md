@@ -33,7 +33,7 @@
 
 ## Python_Django
 
-:point_right: **Django와 MySQL을 연동한 게시판**  
+:point_right: **Python Django Blog with MySQL**  
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT, JQUERY, BOOTSTRAP // Pycharm, MySQL
 - **프레임** : Django
 - **내용**
